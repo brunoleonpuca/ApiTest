@@ -90,7 +90,8 @@ namespace ApiTestv2
         private async void SunInfoButton_Click(object sender, RoutedEventArgs e)
         {
             var sunInfo = await SunProcessor.LoadSunInformation();
-            string messageBoxText = "Sunrise\nSunset";
+            string messageBoxText = $"Sunrise Time: { sunInfo.Sunrise.ToLocalTime().ToShortTimeString() }\n" +
+                $"Sunset Time: { sunInfo.Sunset.ToLocalTime().ToShortTimeString() }";
             string caption = "Sun Information";
             MessageBoxButton button = MessageBoxButton.OK;
             MessageBoxImage icon = MessageBoxImage.Information;
