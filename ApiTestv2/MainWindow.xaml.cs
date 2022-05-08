@@ -86,5 +86,19 @@ namespace ApiTestv2
 
             await LoadImage(currentNumber);
         }
+
+        private async void SunInfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            var sunInfo = await SunProcessor.LoadSunInformation();
+            string messageBoxText = "Sunrise\nSunset";
+            string caption = "Sun Information";
+            MessageBoxButton button = MessageBoxButton.OK;
+            MessageBoxImage icon = MessageBoxImage.Information;
+            MessageBoxResult result;
+
+            result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+
+
+        }
     }
 }

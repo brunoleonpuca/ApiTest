@@ -9,34 +9,18 @@ namespace DemoLibraryv2
 {
     public class SunProcessor
     {
-        public static async Task<ComicModel> LoadComic(int comicNumber = 0)
+        public static async Task<SunModel> LoadSunInformation()
         {
-            string url = "";
-
-            if (comicNumber > 0)
-            {
-                url = $"https://xkcd.com/{ comicNumber }/info.0.json";
-            }
-            else
-            {
-                url = "https://xkcd.com/1/info.0.json";
-            }
-
+            string url = $"https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today";
 
             //Using using you optimize the Api connection by opening and closing automatically
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    ComicModel comic = await response.Content.ReadAsAsync<ComicModel>();
+                    SunResultModel result = await response.Content.ReadAsAsync<SunResultModel>();
 
-                    if (comicNumber == 0)
-                    {
-                        MaxComicNumber = comic.Num;
-                    }
-
-
-                    return comic;
+                    return result.Results;
                 }
                 else
                 {

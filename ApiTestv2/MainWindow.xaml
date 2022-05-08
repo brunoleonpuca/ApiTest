@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="PreviousButton" Content="Previous" HorizontalAlignment="Left" Margin="114,25,0,0" VerticalAlignment="Top" Width="113" Height="45" Click="PreviousButton_Click"/>
-        <Button x:Name="SunInfoButton" Content="Sun Information" HorizontalAlignment="Left" Margin="267,25,0,0" VerticalAlignment="Top" Width="251" Height="45"/>
+        <Button x:Name="SunInfoButton" Content="Sun Information" HorizontalAlignment="Left" Margin="267,25,0,0" VerticalAlignment="Top" Width="251" Height="45" Click="SunInfoButton_Click"/>
         <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="564,25,0,0" VerticalAlignment="Top" Width="110" Height="45" Click="NextButton_Click"/>
-        <Image x:Name="ComicImage" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="712" Margin="44,88,0,0"/>
+        <Image x:Name="ComicImage" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="712" Margin="44,85,0,0" Stretch="Fill"/>
 
     </Grid>
 </Window>
