@@ -1,0 +1,16 @@
+﻿<Window x:Class="ApiTestv2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApiTestv2"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="PreviousButton" Content="Previous" HorizontalAlignment="Left" Margin="114,25,0,0" VerticalAlignment="Top" Width="113" Height="45" Click="PreviousButton_Click"/>
+        <Button x:Name="SunInfoButton" Content="Sun Information" HorizontalAlignment="Left" Margin="267,25,0,0" VerticalAlignment="Top" Width="251" Height="45"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="564,25,0,0" VerticalAlignment="Top" Width="110" Height="45" Click="NextButton_Click"/>
+        <Image x:Name="ComicImage" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="712" Margin="44,88,0,0"/>
+
+    </Grid>
+</Window>
