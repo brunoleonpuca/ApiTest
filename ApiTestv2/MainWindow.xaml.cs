@@ -1,6 +1,7 @@
 ﻿using DemoLibraryv2;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +24,16 @@ namespace ApiTestv2
     {
         private int maxNumber = 0;
         private int currentNumber = 0;
+        public ObservableCollection<FutbolModel> futbolTeams { get; set; }
+
 
         public MainWindow()
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
+
+            
+
             NextButton.IsEnabled = true;
             PreviousButton.IsEnabled = false;
         }
@@ -98,8 +104,20 @@ namespace ApiTestv2
             MessageBoxResult result;
 
             result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+        }
 
+        private async void LoadTeamsButton_Click(object sender, RoutedEventArgs e)
+        {
+            //futbolTeams = await FutbolProcessor.LoadFutbolInformation();
 
+            futbolTeams = new ObservableCollection<FutbolModel>();
+
+            futbolTeams.Add(new FutbolModel() { Data = "Team 1" });
+            futbolTeams.Add(new FutbolModel() { Data = "Team 2" });
+            futbolTeams.Add(new FutbolModel() { Data = "Team 3" });
+
+            //'this' apunta a futbolTeams
+            FutbolDataList.DataContext = this;
         }
     }
 }

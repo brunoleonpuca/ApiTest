@@ -7,10 +7,12 @@
         mc:Ignorable="d" Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="PreviousButton" Content="Previous" HorizontalAlignment="Left" Margin="114,25,0,0" VerticalAlignment="Top" Width="113" Height="45" Click="PreviousButton_Click"/>
-        <Button x:Name="SunInfoButton" Content="Sun Information" HorizontalAlignment="Left" Margin="267,25,0,0" VerticalAlignment="Top" Width="251" Height="45" Click="SunInfoButton_Click"/>
-        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="564,25,0,0" VerticalAlignment="Top" Width="110" Height="45" Click="NextButton_Click"/>
-        <Image x:Name="ComicImage" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="712" Margin="44,85,0,0" Stretch="Fill"/>
+        <Button x:Name="PreviousButton" Content="Previous" HorizontalAlignment="Left" Margin="22,35,0,0" VerticalAlignment="Top" Width="113" Height="45" Click="PreviousButton_Click"/>
+        <Button x:Name="SunInfoButton" Content="Sun Information" HorizontalAlignment="Left" Margin="154,35,0,0" VerticalAlignment="Top" Width="251" Height="45" Click="SunInfoButton_Click"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="420,35,0,0" VerticalAlignment="Top" Width="110" Height="45" Click="NextButton_Click"/>
+        <Image x:Name="ComicImage" HorizontalAlignment="Left" Height="310" VerticalAlignment="Top" Width="474" Margin="44,85,0,0" Stretch="Fill"/>
+        <Button x:Name="LoadTeamsButton" Content="Show Teams" HorizontalAlignment="Left" Margin="595,86,0,0" VerticalAlignment="Top" Width="141" Height="26" Click="LoadTeamsButton_Click"/>
+        <DataGrid x:Name="FutbolDataList" HorizontalAlignment="Left" Height="268" Margin="551,127,0,0" VerticalAlignment="Top" Width="222" ItemsSource="{ Binding futbolTeams }"/>
 
     </Grid>
 </Window>
