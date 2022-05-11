@@ -8,15 +8,11 @@ namespace DemoLibraryv2
 {
     public class FutbolModel
     {
-        public int LegacyId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public string ShortCode { get; set;}
+        public string Short_Code { get; set;}
         public int CountryId { get; set; }
-        public bool NationalTeam { get; set; }
         public int Founded { get; set; }
-        public string LogoPath { get; set; }
-        public int VenueId { get; set; }
-        public int CurrentSeasonId { get; set; }
-        public bool IsPlaceholder { get; set; }
+        public string Logo_Path { get; set; }
     }
 }
