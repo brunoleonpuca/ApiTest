@@ -54,11 +54,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FutbolTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiTestv2\ApiTestv2.csproj">
+      <Project>{69AD0ABB-7483-40D6-A35F-FB0BF4AC4FCB}</Project>
+      <Name>ApiTestv2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoLibraryv2\DemoLibraryv2.csproj">
+      <Project>{7754B9F7-8483-4E21-87F3-3EBEF154CED4}</Project>
+      <Name>DemoLibraryv2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace DemoLibraryv2
 {
-    public class FutbolProcessor
+    public static class FutbolProcessor
     {
         public static ObservableCollection<FutbolModel> futbolItems { get; set; }
         public static List<FutbolModel> futbolItemsInitial { get; set; }

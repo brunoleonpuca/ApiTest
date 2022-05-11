@@ -106,9 +106,9 @@ namespace ApiTestv2
             result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
         }
 
-        private async void LoadTeamsButton_Click(object sender, RoutedEventArgs e)
+        public async void LoadTeamsButton_Click(object sender, RoutedEventArgs e)
         {
-            //futbolTeams = await FutbolProcessor.LoadFutbolInformation();
+            futbolTeams = await FutbolProcessor.LoadFutbolInformation();
 
             futbolTeams = new ObservableCollection<FutbolModel>();
 
