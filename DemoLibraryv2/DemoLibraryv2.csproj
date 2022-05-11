@@ -55,7 +55,11 @@
     <Compile Include="FutbolModel.cs" />
     <Compile Include="FutbolProcessor.cs" />
     <Compile Include="FutbolResultModel.cs" />
+    <Compile Include="MetaModel.cs" />
+    <Compile Include="PaginationModel.cs" />
+    <Compile Include="PlansModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SportsModel.cs" />
     <Compile Include="SunModel.cs" />
     <Compile Include="SunProcessor.cs" />
     <Compile Include="SunResultModel.cs" />

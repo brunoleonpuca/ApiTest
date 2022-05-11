@@ -24,7 +24,7 @@ namespace ApiTestv2
     {
         private int maxNumber = 0;
         private int currentNumber = 0;
-        public ObservableCollection<FutbolModel> futbolTeams { get; set; }
+        public List<FutbolModel> futbolTeams { get; set; }
 
 
         public MainWindow()
@@ -108,13 +108,13 @@ namespace ApiTestv2
 
         public async void LoadTeamsButton_Click(object sender, RoutedEventArgs e)
         {
-            futbolTeams = await FutbolProcessor.LoadFutbolInformation();
+            var futbolTeams = await FutbolProcessor.LoadFutbolInformation();
 
-            futbolTeams = new ObservableCollection<FutbolModel>();
+            //futbolTeams = new ObservableCollection<FutbolModel>();
 
-            futbolTeams.Add(new FutbolModel() { Data = "Team 1" });
-            futbolTeams.Add(new FutbolModel() { Data = "Team 2" });
-            futbolTeams.Add(new FutbolModel() { Data = "Team 3" });
+            //futbolTeams.Add(new FutbolModel() { Data = "Team 1" });
+            //futbolTeams.Add(new FutbolModel() { Data = "Team 2" });
+            //futbolTeams.Add(new FutbolModel() { Data = "Team 3" });
 
             //'this' apunta a futbolTeams
             FutbolDataList.DataContext = this;

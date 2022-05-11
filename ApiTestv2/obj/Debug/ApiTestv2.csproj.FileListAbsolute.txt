@@ -20,3 +20,4 @@ C:\repos\ApiTest\ApiTestv2\obj\Debug\ApiTestv2.csproj.CoreCompileInputs.cache
 C:\repos\ApiTest\ApiTestv2\obj\Debug\ApiTestv2.csproj.CopyComplete
 C:\repos\ApiTest\ApiTestv2\obj\Debug\ApiTestv2.exe
 C:\repos\ApiTest\ApiTestv2\obj\Debug\ApiTestv2.pdb
+C:\repos\ApiTest\ApiTestv2\bin\Debug\Newtonsoft.Json.xml

@@ -29,3 +29,5 @@ C:\repos\ApiTest\ApiTest.UnitTests\obj\Debug\ApiTest.UnitTests.csproj.CoreCompil
 C:\repos\ApiTest\ApiTest.UnitTests\obj\Debug\ApiTest.UnitTests.csproj.CopyComplete
 C:\repos\ApiTest\ApiTest.UnitTests\obj\Debug\ApiTest.UnitTests.dll
 C:\repos\ApiTest\ApiTest.UnitTests\obj\Debug\ApiTest.UnitTests.pdb
+C:\repos\ApiTest\ApiTest.UnitTests\bin\Debug\ApiTest.UnitTests.dll.config
+C:\repos\ApiTest\ApiTest.UnitTests\bin\Debug\Newtonsoft.Json.xml

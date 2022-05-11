@@ -9,3 +9,4 @@ C:\repos\ApiTest\DemoLibraryv2\obj\Debug\DemoLibraryv2.csproj.CoreCompileInputs.
 C:\repos\ApiTest\DemoLibraryv2\obj\Debug\DemoLibraryv2.csproj.CopyComplete
 C:\repos\ApiTest\DemoLibraryv2\obj\Debug\DemoLibraryv2.dll
 C:\repos\ApiTest\DemoLibraryv2\obj\Debug\DemoLibraryv2.pdb
+C:\repos\ApiTest\DemoLibraryv2\obj\Debug\DemoLibraryv2.csproj.AssemblyReference.cache

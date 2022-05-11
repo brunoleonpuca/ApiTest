@@ -6,15 +6,16 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Newtonsoft.Json;
 
 namespace DemoLibraryv2
 {
     public static class FutbolProcessor
     {
-        public static ObservableCollection<FutbolModel> futbolItems { get; set; }
-        public static List<FutbolModel> futbolItemsInitial { get; set; }
+        public static List<FutbolModel> futbolItems { get; set; }
+        //public static FutbolResultModel futbolItemsInitial { get; set; }
 
-        public static async Task<ObservableCollection<FutbolModel>> LoadFutbolInformation()
+        public static async Task<FutbolResultModel> LoadFutbolInformation()
         {
             Configuration config = new Configuration();
             string url = "https://soccer.sportmonks.com/api/v2.0/countries/320/teams?" + config.DefaultToken;
@@ -24,14 +25,12 @@ namespace DemoLibraryv2
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    //futbolItems = new ObservableCollection<FutbolResultModel>();
-
-                    futbolItemsInitial = new List<FutbolModel>();
-
-                    futbolItems = await response.Content.ReadAsAsync<ObservableCollection<FutbolModel>>();
+                    var futbolItemsInitial = await response.Content.ReadAsAsync<FutbolResultModel>();
+                    //var a = JsonConvert.DeserializeObject<FutbolModel>(futbolItemsInitial);
+                    futbolItems = await response.Content.ReadAsAsync<List<FutbolModel>>();
 
                     //futbolItems.AddRange(futbolItemsInitial);
-                    return futbolItems;
+                    return futbolItemsInitial;
                 }
                 else
                 {

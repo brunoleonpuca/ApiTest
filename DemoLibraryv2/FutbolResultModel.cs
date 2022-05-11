@@ -8,7 +8,8 @@ namespace DemoLibraryv2
 {
     public class FutbolResultModel
     {
-        public FutbolModel Data { get; set; }
+        public List<FutbolModel> Data { get; set; }
+        //public List<MetaModel> Meta { get; set; }
 
     }
 }
